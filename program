@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    char s[10]="welcome";
+    int len=strlen(s);
+    int mid=len/2; 
+    char newstring[10];
+    int k=0;
+    for(int i=mid;i<len;i++){
+        newstring[k]=s[i];
+        k=k+1;
+    }
+    for(int i=0;i<mid;i++){
+        newstring[k]=s[i];
+        k=k+1;
+    }
+    int n=7;int count=0;
+    for(int i=0;i<n;i++){
+        count=0;
+        for(int j=0;j<=i;j++){
+        printf("%c",newstring[count]);
+        count=count+1;
+        }
+        printf("\n");
+    }
+}
